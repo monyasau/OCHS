@@ -1,3 +1,12 @@
+body::-webkit-scrollbar {
+width: 1em;
+    }
+    body::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6 px rgba(219, 71, 71, 0.884);
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: rgb(106, 158, 81); outline: 1px solid rgb(48, 52, 56);
+    }
 drop {
   list-style-type: none;
   margin: 0;
