@@ -1,4 +1,4 @@
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
 width: 1em;
     }
     body::-webkit-scrollbar-track {
@@ -6,7 +6,7 @@ width: 1em;
     }
     body::-webkit-scrollbar-thumb {
         background-color: rgb(106, 158, 81); outline: 1px solid rgb(48, 52, 56);
-    }
+    } */
 drop {
   list-style-type: none;
   margin: 0;
