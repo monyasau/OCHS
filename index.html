@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <script>
+    <!-- <style>
+      header.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      header.topnav li {
+        float: left;
+      }
+
+      header.topnav li a {
+        display: inline-block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      header.topnav li a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      header.topnav li.icon {
+        display: none;
+      }
+
+      @media screen and (max-width: 400px) {
+        header.topnav li:not(:first-child) {
+          display: none;
+        }
+        header.topnav li.icon {
+          float: right;
+          display: inline-block;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        header.topnav.responsive {
+          position: relative;
+        }
+        header.topnav.responsive li.icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        header.topnav.responsive li {
+          float: none;  
+          display: inline;
+        }
+        header.topnav.responsive li a {
+          display: block;
+          text-align: left;
+        }
+      }
+    </style> -->
+    <script>
+      function myFunction() {
+        var d = document.getElementById("myTopnav");
+        if (d.className === "topnav") {
+          d.className += " responsive";
+        } else {
+          d.className = "topnav";
+        }
+      }
+
       //preloader
-      var preloader = document.getElementById("loading");
-      function myfunction() {
-        //this one would go and tell the browser not to show the preloader
+
+      function loader() {
+        var preloader = document.getElementById("loading");
+        //this one woheaderd go and tell the browser not to show the preloader
         preloader.style.display = "none";
       }
       //preloader ends
@@ -15,85 +85,104 @@
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #fff url("ping pong loader.gif") no-repeat center center;
+        background: #fff url("/assets/ping\ pong\ loader.gif") no-repeat center
+          center;
         z-index: 99999;
       }
-    </style> -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      /* .welcome-image {
+        background: url("/assets/west\ bourne\ students.JPG") no-repeat;
+         height: 00px; 
+      } */  
+      
+    </style>
+    <meta name="application-name" content="OCHS">
+    <meta name="robots" content="index">
+    <script src="/js/js.js" defer></script>
+    <meta name="apple-mobile-web-app-title" content="OCHS">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>
       Official site of Odokekere community high school| Created by Olanrewaju
     </title>
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon.ico" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/ico" />
-    <link rel="stylesheet" href="style.css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
-    <meta
-      name="description"
-      content="website of Odokekere community high school(OCHS)"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="keywords" content="Odokekere, OCHS, school, ikorodu, college" />
-    <meta name="author" content="OLAJIDE OLANREWAJU" />
+    <link rel="canonicial " href="https://Olanre.netlify.com">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="website of Odokekere community high school(OCHS)">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Odokekere, OCHS, school, ikorodu, college">
+    <meta name="author" content="OLAJIDE OLANREWAJU">
+    <meta name="theme-color" content="#000">
+    <meta http-equiv="cookie" content="userid=xyz; expires= sunday, 24-sep-2 3:59:59 GMT;">
   </head>
-  <body onload="myfunction()">
+  <body onload="loaded()">
     <div id="loading"></div>
-    <header class="topnav responsive" style="margin-bottom: 10px">
+    
+    <header
+      class="topnav responsive"
+      style="
+        margin-bottom: 10px;
+        margin-top: 5px;
+        background-color: coral;
+        height: 0;
+      "
+    >
       <!-- <li><a href="#" class="active">akin</a></li> -->
     </header>
-    <header class="topnav responsive" id="myTopnav">
+    <header class="topnav" id="myTopnav">
       <drop>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">home </a>
+          <a href="javascript:void(0)" class="dropbtn">home \/</a>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <br />
-            <a href="#">Link 2</a>
-            <br />
-            <a href="#">Link 3</a>
+            <a href="#">bla</a>
+            <br>
+            <a href="#">bla</a>
+            <br>
+            <a href="#">bla</a>
+          </div>
+        </li>
+        
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Enrolments \/</a>
+          <div class="dropdown-content">
+            <a href="#">Jss 1</a>
+            <br>
+            <a href="#">Jss 2</a>
+            <br>
+            <a href="#">Jss 3</a>
           </div>
         </li>
         <li class="dropdown"></li>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Enrolments </a>
+          <a href="javascript:void(0)" class="dropbtn">Contact \/</a>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <br />
-            <a href="#">Link 2</a>
-            <br />
-            <a href="#">Link 3</a>
-          </div>
-        </li>
-        <li class="dropdown"></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Contact </a>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <br />
-            <a href="#">Link 2</a>
-            <br />
-            <a href="#">Link 3</a>
+            <a href="#">Twitter </a>
+            <br>
+            <a href="#">Facebook </a>
+            <br>
+            <a href="#">Linked in </a>
           </div>
         </li>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Learning </a>
+          <a href="javascript:void(0)" class="dropbtn">Learning \/</a>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <br />
-            <a href="#">Link 2</a>
-            <br />
-            <a href="#">Link 3</a>
+            <a href="#">Agricultural </a>
+            <br>
+            <a href="#">Computer studies </a>
+            <br>
+            <a href="#">Science </a>
           </div>
         </li>
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">Community </a>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
-            <br />
+            <br>
             <a href="#">Link 2</a>
-            <br />
+            <br>
             <a href="#">Link 3</a>
           </div>
         </li>
@@ -101,9 +190,9 @@
           <a href="javascript:void(0)" class="dropbtn">Giving </a>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
-            <br />
+            <br>
             <a href="#">Link 2</a>
-            <br />
+            <br>
             <a href="#">Link 3</a>
           </div>
         </li>
@@ -112,9 +201,9 @@
           <a href="javascript:void(0)" class="dropbtn">Quicklinks </a>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
-            <br />
+            <br>
             <a href="#">Link 2</a>
-            <br />
+            <br>
             <a href="#">Link 3</a>
           </div>
         </li>
@@ -128,5 +217,30 @@
         >
       </li>
     </header>
+    <!-- <a href="#" download="">download</a> -->
+    <!-- <p id="demo"></p> -->
+    <!-- <button onclick="getLocation()">location</button> -->
+<p id="typer"></p>
+<!-- <button class="add-button" accesskey="h">install</button> -->
+<script>
+var i = 0;
+var txt = '"Shaping learners who inspire..."';
+var speed = 60;
+
+function loaded() {
+ 
+        var preloader = document.getElementById("loading");
+        //this one woheaderd go and tell the browser not to show the preloader
+        preloader.style.display = "none";
+      
+  if (i < txt.length) {
+     document.getElementById("typer").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(loaded, speed);
+  }
+}
+</script>
+
+
   </body>
 </html>
