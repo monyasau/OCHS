@@ -131,7 +131,7 @@ header.topnav li.icon {
     display: none;
   }
   header.topnav li.icon {
-    float: right;
+    /* float: right; */
     display: inline-block;
   }
 }
@@ -175,3 +175,40 @@ header.topnav li.icon {
     height: 300px;
   }
 }
+        @keyframes color {
+            0% {
+                color: green;
+                cursor: col-resize;
+            }
+            10% {
+                color: gold;
+                cursor: copy;
+            }
+            20% {
+                color: fuchsia;
+                cursor: grab;
+            }
+            30% {
+                color: dodgerblue;
+                cursor: help;
+            }
+            40% {
+                color: firebrick;
+                cursor: no-drop;
+            }
+            50% {
+                color: darkkhaki;
+
+            }
+            60% {
+                color: violet;
+            }
+            70% {
+                color: sienna;
+            }
+        }
+        #typer {
+        font-family: cursive;
+        text-align: center;
+        font-size: 80px;
+      }

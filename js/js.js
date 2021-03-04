@@ -62,21 +62,26 @@ window.addEventListener("beforeinstallprompt", (e) => {
     });
   });
 });
+ //geolocation
+var x = document.getElementById("demo");
+function getLocation() {
 if ("geolocation" in navigator) {
-  var ade = navigator.appName;
-//  var ade = navigator.geolocation.getCurrentPosition
-  console.log("your app name is ", ade )
-}
-if ("geolocation" in navigator) {
-  var dele = navigator.appName;
-  //  var ade = navigator.geolocation.getCurrentPosition
-  console.log("your app name is ", dele);
-}
-if (navigator.onLine ) {
-  var olu = navigator.onLine;
-  //  var ade = navigator.geolocation.getCurrentPosition
-  console.log("your computer is ", olu);
+  navigator.geolocation.getCurrentPosition(showPosition, showError);
 }
 else {
-  console.log("not available")
-};
+  x.innerHTML = "Geolocation is not supported";
+}
+}
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.longitude;
+}
+function showError(error) {
+switch (error.code) {
+  case error.PERMISSION_DENIED:
+   x.innerHTML = "user denied the location"
+    break;
+
+  default:
+    break;
+}  
+}

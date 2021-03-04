@@ -63,11 +63,11 @@
     </style> -->
     <script>
       function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
+        var d = document.getElementById("myTopnav");
+        if (d.className === "topnav") {
+          d.className += " responsive";
         } else {
-          x.className = "topnav";
+          d.className = "topnav";
         }
       }
 
@@ -93,11 +93,7 @@
         background: url("/assets/west\ bourne\ students.JPG") no-repeat;
          height: 00px; 
       } */  
-      #typer {
-        font-family: cursive;
-        text-align: center;
-        font-size: 80px;
-      }
+      
     </style>
     <meta name="application-name" content="OCHS">
     <meta name="robots" content="index">
@@ -108,7 +104,7 @@
     <title>
       Official site of Odokekere community high school| Created by Olanrewaju
     </title>
-    <link rel="canonicial " href="">
+    <link rel="canonicial " href="https://Olanre.netlify.com">
     <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon.ico">
     <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon.ico">
     <link rel="manifest" href="manifest.json">
@@ -124,6 +120,7 @@
   </head>
   <body onload="loaded()">
     <div id="loading"></div>
+    
     <header
       class="topnav responsive"
       style="
@@ -220,11 +217,10 @@
         >
       </li>
     </header>
-    <a href="#" download="">download</a>
- 
-<div class="welcome-image">
+    <!-- <a href="#" download="">download</a> -->
+    <p id="demo"></p>
+    <button onclick="getLocation()">location</button>
 <p id="typer"></p>
-</div>
 <button class="add-button" accesskey="h">install</button>
 <script>
 var i = 0;
