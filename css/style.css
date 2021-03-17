@@ -1,6 +1,7 @@
 body::-webkit-scrollbar {
   width: 10px;
 }
+
 /*
     body::-webkit-scrollbar-track {
         box-shadow: inset 0 0 6 px rgba(219, 71, 71, 0.884);
@@ -211,6 +212,7 @@ header.topnav li.icon {
         font-family: cursive;
         text-align: center;
         font-size: 80px;
+<<<<<<< HEAD
       }
       /* :root {
     color-scheme: light dark;
@@ -227,3 +229,6 @@ body, html {
     height: 100%;
     color-scheme: light dark;
 } */
+=======
+      }
+>>>>>>> 4460fe394c02e015c4ce313a4490199a89527e89
