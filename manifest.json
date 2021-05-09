@@ -1,7 +1,4 @@
 {
-  "background_color": "azure",
-  "description": "Odokekere community high school official website.",
-  "display": "fullscreen",
   "icons": [
     {
       "src": "./assets/favicon.ico",
@@ -40,9 +37,13 @@
         "purpose": "any maskable"
     }
   ],
+  "background_color": "white",
+  "description": "Odokekere community high school official website.",
+  "display": "standalone",
   "theme_color": "green",
   "name": "Odokekere community high school",
-  "short_name": "OCHS",
-  "start_url": "index.html",
-  "lang": "en"
+  "short_name": "OCHS", 
+  "start_url": "/",
+  "lang": "en",
+  "scope": "/"
 }

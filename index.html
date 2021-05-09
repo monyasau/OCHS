@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      #loading {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #fff url("/assets/ping\ pong\ loader.gif") no-repeat center
-          center;
-        z-index: 99999;
-      }
-      /* .welcome-image {
-        background: url("/assets/west\ bourne\ students.JPG") no-repeat;
-         height: 00px; 
-      } */  
-      
-    </style>
+    <!-- <script>
+      function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  var user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("username", user, 365);
+    }
+  }
+}
+    </script> -->
+<meta property="og:type" content="website">
+    <meta property="og:url" content="https://ocgs.netlify.com">
+    <meta property="og:site_name" content="OCGS">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="ocgs.netlify.com">
+    <meta name="twitter:title" property="og:title" itemprop="name" content="simple website for Odokekere community high school">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I want to make a simple website for a school but i don't seem to get it">
     <meta name="application-name" content="OCHS">
     <meta name="robots" content="index">
-    <script src="/js/index.js" defer></script>
+    <script src="./js/index.js"></script>
     <meta name="apple-mobile-web-app-title" content="OCHS">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    <title>
-      Official site of Odokekere community high school| Created by Olanrewaju
-    </title>
     <link rel="canonicial " href="https://Olanre.netlify.com">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon.ico">
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon.png">
     <link rel="manifest" href="manifest.json">
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/ico">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="description" content="website of Odokekere community high school(OCHS)">
@@ -37,26 +61,26 @@
     <meta name="keywords" content="Odokekere, OCHS, school, ikorodu, college">
     <meta name="author" content="OLAJIDE OLANREWAJU">
     <meta name="theme-color" content="#000">
-    <meta http-equiv="cookie" content="userid=xyz; expires= sunday, 24-sep-2 3:59:59 GMT;">
-  </head>
-  <body onload="loaded()">
-    <div id="loading"></div>
+    <title>
+      Official website of Odokekere community high school| Created by Olajide Olanrewaju
+    </title>
+    <script>
+      
+      document.cookie = "username=new user; expires=sat, 18 Dec 2021 12:00:00 UTC; path=/";
+    </script>
+        
     
-    <header
-      class="topnav responsive"
-      style="
-        margin-bottom: 10px;
-        margin-top: 5px;
-        background-color: coral;
-        height: 0;
-      "
-    >
-      <!-- <li><a href="#" class="active">akin</a></li> -->
-    </header>
-    <header class="topnav" id="myTopnav" role="banner" role="navigation">
+  </head>
+  <body>
+    <nav>
+     
+     <header class="topnav">
+<h3>...educating future educators</h3>
+      </header>
+    <header class="topnav" id="myTopnav" style="padding-bottom: 10px;">
       <drop>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">home \/</a>
+          <a href="javascript:void(0)" class="dropbtn">Home &#9661;</a>
           <div class="dropdown-content">
             <a href="#">bla</a>
             <br>
@@ -67,7 +91,7 @@
         </li>
         
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Enrolments \/</a>
+          <a href="javascript:void(0)" class="dropbtn">Enrolments &#9661;</a>
           <div class="dropdown-content">
             <a href="#">Jss 1</a>
             <br>
@@ -78,7 +102,7 @@
         </li>
         <li class="dropdown"></li>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Contact \/</a>
+          <a href="javascript:void(0)" class="dropbtn">Contact &#9661;</a>
           <div class="dropdown-content">
             <a href="#">Twitter </a>
             <br>
@@ -88,7 +112,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Learning \/</a>
+          <a href="javascript:void(0)" class="dropbtn">Departments &#9661;</a>
           <div class="dropdown-content">
             <a href="#">Agricultural </a>
             <br>
@@ -98,7 +122,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Community </a>
+          <a href="javascript:void(0)" class="dropbtn">staffs &#9661;</a>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <br>
@@ -108,18 +132,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Giving </a>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <br>
-            <a href="#">Link 2</a>
-            <br>
-            <a href="#">Link 3</a>
-          </div>
-        </li>
-
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Quicklinks </a>
+          <a href="javascript:void(0)" class="dropbtn">Quicklinks &#8595;</a>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <br>
@@ -132,16 +145,101 @@
       <li class="icon">
         <a
           href="javascript:void(0);"
-          style="font-size: 15px"
+          style="font-size: 15px;"
           onclick="myFunction()"
-          >☰ more</a
+          >☰ Menu</a
         >
       </li>
-      <li>
-      <input type="text" placeholder="&#128269; Search OCHS" style="background-color: coral; border: none; border-radius: 3px;">
-      </li>
+      <!-- <li>
+      <input type="text" placeholder="&#128269; Search OCHS" style="background-color: green; border: none; border-radius: 3px;">
+      </li> -->
     </header>
-<p id="typer"></p>
+    </nav>
 <script>
+ function getIP(json) {
+   if (json.country && json.city) {
+    var div = document.getElementById('ipLookup');
+    div.innerHTML=''+json.countryCode+'|  '+json.city+', '+json.country+'';
+   }
+  }
 </script>
+<script src="https://extreme-ip-lookup.com/json/?callback=getIP" async defer></script>
+
+<!-- slideshow
+ -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="/assets/classroom a.png" style="width:100%">
+        <div class="text">Hygenic classroom</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="/assets/school compound.jpg" style="width:100%">
+        <div class="text">School compound of OCHS</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="/assets/cultural dance.png" style="width:100%">
+        <div class="text">Cultural day at OCHS</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+    // slideshow
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 4500); // Change image every 4 and half seconds
+      }
+      //slideshow end
+
+      
+      </script>
+      <div style="background-color: lightgrey; display: flex;">
+        <div class="mycard" style="margin-left: auto; margin-right: auto; margin-left: auto;">
+          <h3 class="mycard-title">Admission</h3>
+          <h5 class="mycard-text">Our Admission is bla bla bla</h5>
+        </div>
+
+        <div class="mycard">
+          <h3 class="mycard-title">Job opportunity</h3>
+          <h5 class="mycard-text">some text should be here</h5>
+        </div>
+        <div class="mycard">
+          <h3 class="mycard-title">Our mission</h3>
+          <h5 class="mycard-text">our mission is to provide education for the public</h5>
+        </div>
+        </div>
+
+
+
+
+        
+    <footer style="background-color: black;">
+  <center>
+     <div id="ipLookup"></div>
+     <h1 style="color: white;">
+     &copy; 2021 OCGS
+     </h1>
+    </center>
+</footer>
+</body>
   </html>

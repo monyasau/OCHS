@@ -1,19 +1,16 @@
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches
-      .open("ochs-stre")
+      .open("ochs-store")
       .then((cache) =>
         cache.addAll([
           "/",
           "/manifest.json",
           "/index.html",
           "/offline.html",
-          "/js/js.js",
-          "/js/header.js",
           "/js/index.js",
           "./css/style.css",
-          "./assets/favicon.ico",
-          "./assets/ping pong loader.gif",
+          "./assets/favicon.ico"
         ])
       )
   );
